@@ -36,6 +36,7 @@ Additionally, refer to [Link](https://github.com/pltrdy/files2rouge) to install 
 **Model**
 
 Built on transformer architecture, with a model size of 16M parameters.
+Checkpoints will be available soon.
 
 
 ## ✨ Training
