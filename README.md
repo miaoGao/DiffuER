@@ -1,16 +1,14 @@
 # DiffuER
 
-This repo contains the code for `DiffuER: Auxiliary Regularized Diffusion Language Model
-for Semantic Preserving Text Generation`
+This repo contains the code for `DiffuER: Auxiliary Regularized Diffusion Model for Text Generation with Semantic Consistency`
 
-## Overview
+## 📄 Overview
 
-we propose DiffuER (Diffusion with Embedding and Reconstruction loss). By utilizing word embeddings from a pre-trained masked language model as auxiliary regularization and leveraging a simple encoder-decoder module to reconstruct the original text from the generated sequence, our proposed method enhances the model’s capability of capturing and preserving semantics.
+we propose DiffuER (Diffusion with Embedding and Reconstruction loss). By utilizing word embeddings from a pre-trained masked language model as auxiliary regularization and leveraging a simple encoder-decoder module to reconstruct the original text from the generated sequence, our proposed method enhances the model’s capability of semantic consistency.
 
 <div align=center><img src="image/model.png" width = "600" height = 300/></div>
 
-On two diffusion language models and three text generation tasks, our proposed DiffuER achieves a maximum reduction of 38.7 in perplexity and outperforms all diffusion-based baselines in other metrics.
-
+Experimental results across four types of text generation tasks demonstrate DiffuER’s superiority in terms of generation quality, fluency, diversity and semantic consistency, outperforming AR, NAR and diffusion-based language models with the same model architecture and the number of parameters.
 
 
 ## ⚙️ Experiment Setup
@@ -30,11 +28,14 @@ Additionally, refer to `https://github.com/pltrdy/files2rouge` to install files2
 
 **Dataset:**
 
-Available soon.
+- Paraphrase: [QQP](https://www.kaggle.com/c/quora-question-pairs)
+- Text simplification: [](https://huggingface.co/datasets/bogdancazan/wikilarge-text-simplification)
+- Machine translation: IWSLT2014
+- Text summarization: [XSum](https://huggingface.co/datasets/EdinburghNLP/xsum)
 
 **Model**
 
-Available soon.
+Built on transformer architecture, with a model size of 16M parameters.
 
 
 ## Training
