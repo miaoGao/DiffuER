@@ -24,12 +24,12 @@ pip install torch torchvision torchaudio --extra-index-url https://download.pyto
 pip install -r requirments.txt            # install dependencies
 ```
 
-Additionally, refer to `https://github.com/pltrdy/files2rouge` to install files2rouge in the current env.
+Additionally, refer to [Link](https://github.com/pltrdy/files2rouge) to install files2rouge in the current env.
 
 **Dataset:**
 
 - Paraphrase: [QQP](https://www.kaggle.com/c/quora-question-pairs)
-- Text simplification: [](https://huggingface.co/datasets/bogdancazan/wikilarge-text-simplification)
+- Text simplification: [WikiLarge](https://huggingface.co/datasets/bogdancazan/wikilarge-text-simplification)
 - Machine translation: IWSLT2014
 - Text summarization: [XSum](https://huggingface.co/datasets/EdinburghNLP/xsum)
 
@@ -38,7 +38,7 @@ Additionally, refer to `https://github.com/pltrdy/files2rouge` to install files2
 Built on transformer architecture, with a model size of 16M parameters.
 
 
-## Training
+## ✨ Training
 
 To train a model
 - run `bash scripts/run_qqp.sh` to train, inference and evaluate the QQP dataset.
@@ -48,7 +48,7 @@ To train a model
 In the scripts, you can enable the pratrained embedding loss to set `USE_TEACHER=True` and enable the reconstruction loss to set `USE_AUX_AR_MODEL=True`
 
 
-## Repo Reference
+## 🤝 Repo Reference
 
 We appreciate the open source of the following projects:
 - [AR-Diffusion](https://github.com/microsoft/ProphetNet/tree/master/AR-diffusion)
